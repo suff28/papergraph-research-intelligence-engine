@@ -1,4 +1,4 @@
-# PaperGraph: Research Paper Intelligence Engine
+# Research Evidence Explorer
 
 PaperGraph is a research intelligence platform that ingests paper metadata, extracts methods/datasets/metrics from abstracts, builds relationships between papers, and exposes search, graph, and leaderboard views through an API and dashboard.
 
@@ -140,3 +140,9 @@ papergraph-research-intelligence/
   Dockerfile
   README.md
 ```
+
+## Demo Results
+
+The bundled sample corpus contains **8 sample paper records**. Running the local entity extraction and graph-building code produces **21 extracted entities** and **22 paper relationships**. These counts were reproduced on October 15, 2026.
+
+Relationships connect records with overlapping methods, datasets, tasks, or domains. These are sample-corpus results, not a large-scale ingestion benchmark. The implemented application uses PostgreSQL, FastAPI, Streamlit, and Docker Compose.
